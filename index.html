@@ -4,126 +4,223 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Akash Nand | Senior Product Manager</title>
-<meta name="description" content="Akash Nand. Senior Product Manager at TruKKer. AI products in live operations, marketplace and fintech platforms across the GCC, Egypt, Turkey and the EU.">
+<meta name="description" content="Akash Nand. Senior Product Manager at TruKKer. AI assistants in live operations, transaction management automation, marketplace and fintech platforms across the GCC, Egypt, Turkey and the EU.">
 <style>
   :root{
-    --ink:#141a24; --muted:#5b6472; --line:#e4e1da; --bg:#faf8f4;
-    --accent:#0d5c4d; --accent-soft:#eef4f1;
+    --ink:#10151d; --body:#3a4351; --muted:#6b7482; --line:#e6e2d8; --line2:#efece4;
+    --bg:#faf8f3; --card:#ffffff; --accent:#0c5c4c; --accent-ink:#0a4a3e;
+    --accent-soft:#e9f2ee; --gold:#9a7b2d; --gold-soft:#f6efdd;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.65}
+  html{scroll-behavior:smooth}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--ink);line-height:1.68}
   .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}
-  main{max-width:860px;margin:0 auto;padding:56px 24px 80px}
-  header p.kicker{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
-  h1{font-size:clamp(30px,5vw,44px);line-height:1.15;font-weight:600;margin-bottom:18px}
-  .lede{font-size:19px;color:#2c3542;max-width:44em}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+  nav{position:sticky;top:0;z-index:20;background:rgba(250,248,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+  nav .brand{font-weight:700;font-size:15px;letter-spacing:.02em;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+  nav .brand span{color:var(--accent)}
+  nav .menu{display:flex;gap:22px}
+  nav .menu a{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13.5px;color:var(--muted);text-decoration:none}
+  nav .menu a:hover{color:var(--accent)}
+  @media(max-width:640px){nav .menu a:nth-child(n+4){display:none}}
+
+  header.hero{padding:72px 0 40px}
+  .kicker{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:18px}
+  h1{font-size:clamp(32px,5.4vw,52px);line-height:1.12;font-weight:600;letter-spacing:-.01em;margin-bottom:20px;max-width:20em}
+  .lede{font-size:19.5px;color:var(--body);max-width:42em}
   .lede strong{color:var(--ink)}
-  .links{margin:22px 0 8px}
-  .links a{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:20px;padding:6px 14px;margin-right:8px;display:inline-block;margin-bottom:8px;background:#fff}
+  .links{margin:26px 0 0}
+  .links a{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:var(--accent-ink);font-weight:500;text-decoration:none;border:1px solid var(--line);border-radius:22px;padding:8px 18px;margin-right:10px;display:inline-block;margin-bottom:10px;background:var(--card);transition:border-color .15s}
   .links a:hover{border-color:var(--accent)}
-  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:36px 0}
-  .stat{background:#fff;padding:18px 18px}
-  .stat b{display:block;font-size:24px;color:var(--accent);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:700}
-  .stat span{font-size:13.5px;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
-  h2{font-size:15px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:52px 0 20px;font-weight:600}
-  .card{border-top:1px solid var(--line);padding:20px 0}
-  .card h3{font-size:19px;font-weight:600;margin-bottom:6px}
-  .card .tag{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border-radius:4px;padding:2px 8px;margin-left:10px;vertical-align:2px;white-space:nowrap}
-  .card p{color:#39424f;max-width:46em}
-  .repos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
-  .repo{border:1px solid var(--line);border-radius:10px;background:#fff;padding:18px;text-decoration:none;color:inherit;display:block}
-  .repo:hover{border-color:var(--accent)}
-  .repo b{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:14px;color:var(--accent)}
-  .repo p{font-size:14.5px;color:#39424f;margin-top:8px}
+  .links a.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+  .marquee{margin:48px 0 8px;border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:14px;background:var(--card);padding:34px 34px 30px;box-shadow:0 1px 2px rgba(16,21,29,.04)}
+  .marquee .tag{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--gold);background:var(--gold-soft);border-radius:4px;padding:3px 10px;margin-bottom:14px}
+  .marquee h2{font-size:26px;font-weight:600;margin:0 0 12px;letter-spacing:0;text-transform:none;color:var(--ink)}
+  .marquee p{color:var(--body);max-width:52em}
+  .marquee .split{display:grid;grid-template-columns:1fr 220px;gap:28px;align-items:center}
+  @media(max-width:700px){.marquee .split{grid-template-columns:1fr}}
+  .bignum{text-align:center;border-left:1px solid var(--line2);padding-left:28px}
+  @media(max-width:700px){.bignum{border-left:none;padding-left:0;text-align:left}}
+  .bignum b{display:block;font-size:56px;line-height:1;color:var(--accent);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:800}
+  .bignum span{font-size:13.5px;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;display:block;margin-top:8px}
+  .flow{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12.5px;color:var(--accent-ink);background:var(--accent-soft);border-radius:8px;padding:12px 16px;margin-top:18px;overflow-x:auto;white-space:nowrap}
+  .marquee .foot{margin-top:16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px}
+  .marquee .foot a{color:var(--accent);font-weight:600;text-decoration:none}
+  .marquee .foot a:hover{text-decoration:underline}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:40px 0 8px}
+  .stat{background:var(--card);padding:20px 18px}
+  .stat b{display:block;font-size:26px;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-weight:750}
+  .stat span{font-size:13px;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;display:block;margin-top:4px;line-height:1.45}
+
+  section{padding:56px 0 8px}
+  .sec-label{display:flex;align-items:baseline;gap:14px;margin-bottom:26px}
+  .sec-label .num{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:13px;color:var(--gold)}
+  h2.sec{font-size:15px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);font-weight:700}
+  .sec-rule{flex:1;height:1px;background:var(--line)}
+
+  .work{display:grid;gap:14px}
+  .card{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:24px 26px;transition:border-color .15s}
+  .card:hover{border-color:#cfc9ba}
+  .card h3{font-size:19px;font-weight:600;margin-bottom:8px}
+  .card .tag{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:4px;padding:2px 8px;margin-left:10px;vertical-align:2px;white-space:nowrap}
+  .card p{color:var(--body);max-width:50em;font-size:15.5px}
+
+  .repos{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+  .repo{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:20px;text-decoration:none;color:inherit;display:block;transition:border-color .15s,transform .15s}
+  .repo:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .repo b{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:13.5px;color:var(--accent)}
+  .repo.star{grid-column:1/-1;border-left:4px solid var(--accent)}
+  .repo p{font-size:14.5px;color:var(--body);margin-top:8px;line-height:1.55}
   .note{font-size:14px;color:var(--muted);margin-top:16px;font-style:italic}
-  .how .card p{max-width:52em}
-  .how b{font-weight:600}
-  .path{border-left:2px solid var(--line);padding-left:22px}
-  .step{margin-bottom:22px;position:relative}
-  .step::before{content:'';position:absolute;left:-27px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
-  .step .when{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12.5px;color:var(--muted);letter-spacing:.05em}
-  .step p{color:#39424f;font-size:15.5px}
-  footer{margin-top:64px;border-top:1px solid var(--line);padding-top:24px;font-size:14px;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
-  footer a{color:var(--accent)}
-  @media (max-width:600px){.lede{font-size:17px}}
+
+  .how{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+  .how .card p{font-size:15px}
+  .how b{font-weight:650;color:var(--ink)}
+
+  .path{border-left:2px solid var(--line);padding-left:26px;margin-left:4px}
+  .step{margin-bottom:26px;position:relative}
+  .step::before{content:'';position:absolute;left:-32px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .step .when{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12px;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+  .step h3{font-size:17px;font-weight:600;margin:2px 0 4px}
+  .step p{color:var(--body);font-size:15px;max-width:46em}
+
+  .contact-box{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:34px;margin-top:4px}
+  .contact-box p{font-size:17.5px;color:var(--body);max-width:40em}
+
+  footer{margin:64px 0 48px;border-top:1px solid var(--line);padding-top:26px;font-size:13.5px;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  footer a{color:var(--accent);text-decoration:none}
 </style>
 </head>
 <body>
-<main>
-  <header>
-    <p class="kicker">Akash Nand · Dubai</p>
-    <h1>AI products that run live operations, and the platforms underneath them.</h1>
-    <p class="lede"><strong>Senior Product Manager at TruKKer</strong>, the Middle East's largest digital freight network. I lead a team of 10+ product managers and own the roadmap for order-servicing systems processing about $250M in annual transactions. My last three years: taking AI assistants from idea to the systems that carry our daily volume across the GCC, Egypt, Turkey and the EU.</p>
-    <div class="links sans">
+
+<nav class="sans">
+  <div class="wrap">
+    <div class="brand">Akash <span>Nand</span></div>
+    <div class="menu">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#how">How I work</a>
+      <a href="#path">Path</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap">
+  <header class="hero">
+    <p class="kicker">Senior Product Manager · TruKKer · Dubai</p>
+    <h1>AI that runs live operations, and the platforms underneath it.</h1>
+    <p class="lede">I build AI assistants that carry real volume at <strong>TruKKer</strong>, the Middle East's largest digital freight network, and I own the roadmap for order-servicing systems processing about <strong>$250M in annual transactions</strong>. Team of 10+ product managers. Markets from the GCC to Egypt, Turkey and the EU.</p>
+    <div class="links">
+      <a class="primary" href="mailto:akash.n18@fms.edu">Email me</a>
       <a href="https://www.linkedin.com/in/akash-nand-fms">LinkedIn</a>
       <a href="https://github.com/akashnand1">GitHub</a>
-      <a href="mailto:akash.n18@fms.edu">Email</a>
     </div>
   </header>
 
+  <div class="marquee">
+    <span class="tag">Flagship · AI transaction management</span>
+    <div class="split">
+      <div>
+        <h2>The system knows the truck is loaded before anyone asks.</h2>
+        <p>I extended our vendor-side AI assistant with transaction management: it reads the messy reality of driver voice notes, WhatsApp messages and photographed documents, extracts shipment milestones with confidence scores, and writes them straight into the system of record through a guarded state machine. Clients get notified the moment status changes. No one types anything.</p>
+        <div class="flow">voice note / WhatsApp / OCR &nbsp;&rarr;&nbsp; extract + confidence &nbsp;&rarr;&nbsp; legal-transition gate &nbsp;&rarr;&nbsp; status updated &nbsp;&rarr;&nbsp; client notified</div>
+      </div>
+      <div class="bignum">
+        <b>25%</b>
+        <span>of all transaction status updates now happen automatically, with zero added operational overhead</span>
+      </div>
+    </div>
+    <p class="foot">I rebuilt the shape of this system as a runnable public project: <a href="https://github.com/akashnand1/transaction-status-agent">transaction-status-agent &rarr;</a></p>
+  </div>
+
   <div class="stats sans">
-    <div class="stat"><b>70-75%</b><span>of demand captured through the AI assistant channel</span></div>
-    <div class="stat"><b>$250M</b><span>annual transactions on systems whose roadmap I own</span></div>
+    <div class="stat"><b>70-75%</b><span>of demand captured through the client-facing AI assistant channel</span></div>
+    <div class="stat"><b>+30%</b><span>operational volume absorbed with a 10% leaner team</span></div>
     <div class="stat"><b>60 &rarr; 45</b><span>days sales outstanding after the driver fintech work</span></div>
     <div class="stat"><b>~25%</b><span>faster bid-to-award cycles from dynamic vendor windows</span></div>
-    <div class="stat"><b>+30%</b><span>operational volume absorbed with a 10% leaner team</span></div>
-    <div class="stat"><b>10+</b><span>product and implementation managers mentored</span></div>
+    <div class="stat"><b>&lt;5%</b><span>invoice rejection rate after the order-servicing revamp</span></div>
+    <div class="stat"><b>10+</b><span>product and implementation managers led and mentored</span></div>
   </div>
 
-  <h2>Selected work</h2>
-  <div class="card">
-    <h3>AI assistants in production<span class="tag">TruKKer</span></h3>
-    <p>Built and rolled out a portfolio of AI assistants that run real operations: a client-facing omni-channel assistant (email, WhatsApp, voice) that captures and negotiates demand, a vendor-facing assistant handling sourcing, load negotiation and disputes, and a finance assistant for invoicing and collections built directly on a Claude integration. They are not pilots. The client channel alone drives roughly 70-75% of demand captured.</p>
-  </div>
-  <div class="card">
-    <h3>Logisty, with Dubai's RTA<span class="tag">0 to 1</span></h3>
-    <p>A B2C on-demand home-moving and last-mile platform, built as a public-private partnership with the Roads and Transport Authority. Owned it end to end, from concept and discovery through launch.</p>
-  </div>
-  <div class="card">
-    <h3>Fintech and compliance rails<span class="tag">FinOps</span></h3>
-    <p>Driver-facing fintech that cut DSO from 60 to 45 days, ZATCA-compliant e-invoicing for Saudi Arabia, Turkey and Kazakhstan integrations, EU multi-currency support and real-time NetSuite reporting. Money logic ships only when it can be walked through on one screen.</p>
-  </div>
-  <div class="card">
-    <h3>Marketplace mechanics<span class="tag">Platform</span></h3>
-    <p>Dynamic vendor bid windows with automated award flows, cutting bid-to-award cycle time by about 25%. Driver App adoption up 30% on the back of research-informed features; invoice rejection rates brought under 5%.</p>
-  </div>
-  <div class="card">
-    <h3>Electric and autonomous trucking<span class="tag">New business</span></h3>
-    <p>Took TruKKer's Electric and Autonomous Commercial Vehicle business from concept to government-approved pilots: 90+ OEMs evaluated, MOIAT and RTA approvals, pilots with 50+ customers, and a market report co-published with PwC.</p>
-  </div>
+  <section id="work">
+    <div class="sec-label"><span class="num">01</span><h2 class="sec">Selected work</h2><span class="sec-rule"></span></div>
+    <div class="work">
+      <div class="card">
+        <h3>AI assistants in production<span class="tag">TruKKer</span></h3>
+        <p>A portfolio of assistants that run daily operations, not pilots. A client-facing omni-channel assistant (email, WhatsApp, voice) captures and negotiates demand and now drives roughly 70-75% of demand captured. A vendor-facing assistant handles sourcing, load negotiation and disputes at ~40% adoption, and its transaction management capability is the flagship above. A finance assistant for invoicing and collections is being built directly on a Claude integration, moving the agent stack in-house.</p>
+      </div>
+      <div class="card">
+        <h3>Logisty, with Dubai's RTA<span class="tag">0 to 1</span></h3>
+        <p>A B2C on-demand home-moving and last-mile platform, built as a public-private partnership with the Roads and Transport Authority. Owned end to end, from concept and discovery through launch.</p>
+      </div>
+      <div class="card">
+        <h3>Fintech and compliance rails<span class="tag">FinOps</span></h3>
+        <p>Driver-facing fintech that cut DSO from 60 to 45 days. ZATCA-compliant e-invoicing for Saudi Arabia, Turkey and Kazakhstan integrations, EU multi-currency support and real-time NetSuite reporting. Money logic ships only when it can be walked through on one screen.</p>
+      </div>
+      <div class="card">
+        <h3>Marketplace mechanics<span class="tag">Platform</span></h3>
+        <p>Dynamic vendor bid windows with automated award flows, cutting bid-to-award cycle time by about 25% and external vendor engagement by 30%. Driver App adoption up 30% on research-informed features; invoice rejection rates brought under 5%.</p>
+      </div>
+      <div class="card">
+        <h3>Electric and autonomous trucking<span class="tag">New business</span></h3>
+        <p>Took TruKKer's Electric and Autonomous Commercial Vehicle business from concept to government-approved pilots: 90+ OEMs evaluated, MOIAT and RTA approvals, pilots with 50+ customers, and a market report co-published with PwC.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Things I build to think</h2>
-  <div class="repos sans">
-    <a class="repo" href="https://github.com/akashnand1/invoice-to-cash-agent"><b>invoice-to-cash-agent</b><p>Readiness gates, a collections queue ranked by expected recovery, and dunning drafts a human approves. Fails closed, with an eval harness.</p></a>
-    <a class="repo" href="https://github.com/akashnand1/bid-window-optimizer"><b>bid-window-optimizer</b><p>How long should a bid window stay open? A simulator where quotes expire, and the fixed window quietly loses on every metric.</p></a>
-    <a class="repo" href="https://github.com/akashnand1/freight-doc-intake"><b>freight-doc-intake</b><p>Voice notes and OCR'd documents into structured orders, with per-field confidence and a review queue. False auto-bookings: zero, by design.</p></a>
-    <a class="repo" href="https://github.com/akashnand1/adoption-pulse"><b>adoption-pulse</b><p>Adoption analytics that ends in a decision, not a dashboard. Classifies every feature's lifecycle and writes the Monday digest itself.</p></a>
-  </div>
-  <p class="note">Everything runs offline on mock data with zero API keys, and every repo runs its own tests in CI. Nothing is company code. All of it is how I think about product.</p>
+  <section id="projects">
+    <div class="sec-label"><span class="num">02</span><h2 class="sec">Things I build to think</h2><span class="sec-rule"></span></div>
+    <div class="repos sans">
+      <a class="repo star" href="https://github.com/akashnand1/transaction-status-agent"><b>transaction-status-agent</b><p>The transaction management problem in miniature: driver voice notes and OCR'd documents become guarded state-machine updates with automatic client notifications. Illegal transitions never apply. Zero wrong states written, by construction.</p></a>
+      <a class="repo" href="https://github.com/akashnand1/invoice-to-cash-agent"><b>invoice-to-cash-agent</b><p>Readiness gates, a collections queue ranked by expected recovery, and dunning drafts a human approves. Fails closed, with an eval harness.</p></a>
+      <a class="repo" href="https://github.com/akashnand1/bid-window-optimizer"><b>bid-window-optimizer</b><p>How long should a bid window stay open? A simulator where quotes expire, and the fixed window quietly loses on every metric.</p></a>
+      <a class="repo" href="https://github.com/akashnand1/freight-doc-intake"><b>freight-doc-intake</b><p>Voice notes and OCR'd documents into structured orders, with per-field confidence and a review queue. False auto-bookings: zero, by design.</p></a>
+      <a class="repo" href="https://github.com/akashnand1/adoption-pulse"><b>adoption-pulse</b><p>Adoption analytics that ends in a decision, not a dashboard. Classifies every feature's lifecycle and writes the Monday digest itself.</p></a>
+    </div>
+    <p class="note">Everything runs offline on mock data with zero API keys, and every repo runs its own tests in CI. Nothing is company code. All of it is how I think about product.</p>
+  </section>
 
-  <h2>How I work</h2>
-  <div class="how">
-    <div class="card"><p><b>Adoption is the product.</b> A feature that ships but is not used is inventory. I design for the second week of use, not the launch demo.</p></div>
-    <div class="card"><p><b>AI earns autonomy per workflow.</b> Nothing an assistant does touches a customer or money without a measured baseline, a confidence threshold and a human path for the ambiguous cases.</p></div>
-    <div class="card"><p><b>Explain or be re-checked.</b> If automation cannot give its reason in one line, operations will double-check everything and you have automated nothing.</p></div>
-    <div class="card"><p><b>The team is the roadmap.</b> Ten product managers who can each hold a room with engineering and a CFO will outbuild any individually brilliant backlog.</p></div>
-  </div>
+  <section id="how">
+    <div class="sec-label"><span class="num">03</span><h2 class="sec">How I work</h2><span class="sec-rule"></span></div>
+    <div class="how">
+      <div class="card"><p><b>Adoption is the product.</b> A feature that ships but is not used is inventory. I design for the second week of use, not the launch demo.</p></div>
+      <div class="card"><p><b>AI earns autonomy per workflow.</b> Nothing an assistant does touches a customer, money or a system of record without a measured baseline, a confidence threshold and a human path for the ambiguous cases.</p></div>
+      <div class="card"><p><b>Explain or be re-checked.</b> If automation cannot give its reason in one line, operations will double-check everything and you have automated nothing.</p></div>
+      <div class="card"><p><b>The team is the roadmap.</b> Ten product managers who can each hold a room with engineering and a CFO will outbuild any individually brilliant backlog.</p></div>
+    </div>
+  </section>
 
-  <h2>Path</h2>
-  <div class="path">
-    <div class="step"><span class="when">2022 to now</span><p><b>TruKKer</b> · Senior Product Manager. AI assistant portfolio, order-servicing platform, fintech rails, Logisty (RTA PPP), EV and autonomous trucking. Team of 10+.</p></div>
-    <div class="step"><span class="when">2021 to 2022</span><p><b>Collegedunia</b> · Product Manager. Calling and attribution systems; lead conversion from 2.3% to 4.2%.</p></div>
-    <div class="step"><span class="when">2018 to 2021</span><p><b>Sterlite Power (Vedanta)</b> · Manager, Product Growth. INR 150 Cr order book, first Southeast Asia entry, European grid clients.</p></div>
-    <div class="step"><span class="when">2013 to 2016</span><p><b>Samsung R&amp;D</b> · Senior Software Engineer. RTL verification for chips shipped in 10M+ units.</p></div>
-    <div class="step"><span class="when">Education</span><p>MBA, FMS Delhi · B.Tech, MANIT Bhopal · PMP · PSPO I</p></div>
-  </div>
+  <section id="path">
+    <div class="sec-label"><span class="num">04</span><h2 class="sec">Path</h2><span class="sec-rule"></span></div>
+    <div class="path">
+      <div class="step"><span class="when">2022 to now</span><h3>TruKKer · Senior Product Manager</h3><p>AI assistant portfolio, order-servicing platform (~$250M annual transactions), fintech rails, Logisty (RTA PPP), EV and autonomous trucking. $100M Series C due diligence with the CXO team. Team of 10+.</p></div>
+      <div class="step"><span class="when">2021 to 2022</span><h3>Collegedunia · Product Manager</h3><p>Calling and attribution systems; lead conversion from 2.3% to 4.2%, daily qualified leads up 60%.</p></div>
+      <div class="step"><span class="when">2018 to 2021</span><h3>Sterlite Power (Vedanta) · Manager, Product Growth</h3><p>INR 150 Cr order book (+50% YoY), first Southeast Asia entry, European grid clients including Fingrid, Landsnet and Tennet.</p></div>
+      <div class="step"><span class="when">2013 to 2016</span><h3>Samsung R&amp;D · Senior Software Engineer</h3><p>RTL verification of AMBA bus protocols for chips shipped in 10M+ units; automation cut verification time 30%.</p></div>
+      <div class="step"><span class="when">Education</span><h3>MBA, FMS Delhi · B.Tech, MANIT Bhopal</h3><p>PMP · PSPO I · Lean Six Sigma Green Belt · IBM Generative AI</p></div>
+    </div>
+  </section>
 
-  <h2>Get in touch</h2>
-  <p class="lede" style="font-size:17px">Open to director-level product conversations across Europe, the GCC and Southeast Asia, especially where AI is expected to carry real volume, not decorate a deck.</p>
+  <section id="contact">
+    <div class="sec-label"><span class="num">05</span><h2 class="sec">Get in touch</h2><span class="sec-rule"></span></div>
+    <div class="contact-box">
+      <p>Open to director-level product conversations across Europe, the GCC and Southeast Asia, especially where AI is expected to carry real volume, not decorate a deck.</p>
+      <div class="links" style="margin-top:20px">
+        <a class="primary" href="mailto:akash.n18@fms.edu">akash.n18@fms.edu</a>
+        <a href="https://www.linkedin.com/in/akash-nand-fms">LinkedIn</a>
+        <a href="https://github.com/akashnand1">GitHub</a>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <a href="mailto:akash.n18@fms.edu">akash.n18@fms.edu</a> · <a href="https://www.linkedin.com/in/akash-nand-fms">LinkedIn</a> · <a href="https://github.com/akashnand1">GitHub</a><br><br>
-    Akash Nand. One HTML file, no framework, loads fast.
+    <span>Akash Nand · Dubai</span>
+    <span>One HTML file, no framework, loads fast.</span>
   </footer>
 </main>
 </body>
