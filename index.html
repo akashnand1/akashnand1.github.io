@@ -83,9 +83,10 @@
   @media(max-width:640px){.repos{grid-template-columns:1fr}}
   .repo{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:20px 22px;text-decoration:none;color:inherit;display:block;transition:border-color .15s,transform .15s,box-shadow .15s}
   .repo:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 4px 12px rgba(12,92,76,.08)}
-  .repo b{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:14px;color:var(--accent);word-break:break-word}
+  .repo b{display:block;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:16px;font-weight:650;color:var(--ink)}
+  .repo .rname{display:inline-block;font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:12px;color:var(--accent);margin-top:4px;word-break:break-word}
   .repo.star{grid-column:1/-1;border-left:4px solid var(--accent)}
-  .repo p{font-size:14.5px;color:var(--body);margin-top:9px;line-height:1.55}
+  .repo p{font-size:14.5px;color:var(--body);margin-top:10px;line-height:1.55}
   .note{font-size:14px;color:var(--muted);margin-top:16px;font-style:italic}
 
   .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -201,11 +202,11 @@
   <section id="projects">
     <div class="sec-label sans"><span class="num">02</span><h2 class="sec">Things I build to think</h2><span class="sec-rule"></span></div>
     <div class="repos sans">
-      <a class="repo star" href="https://github.com/akashnand1/transaction-status-agent"><b>transaction-status-agent</b><p>The transaction-management problem in miniature: driver voice notes and scanned documents become validated status updates with automatic customer notifications. Invalid updates never apply. Zero wrong states written, by construction.</p></a>
-      <a class="repo" href="https://github.com/akashnand1/invoice-to-cash-agent"><b>invoice-to-cash-agent</b><p>Readiness checks, a collections queue ranked by expected recovery, and reminder drafts a human approves. Fails safe, with an evaluation harness.</p></a>
-      <a class="repo" href="https://github.com/akashnand1/bid-window-optimizer"><b>bid-window-optimizer</b><p>How long should a bid window stay open? A simulator where quotes expire, and the fixed window quietly loses on every metric.</p></a>
-      <a class="repo" href="https://github.com/akashnand1/freight-doc-intake"><b>freight-doc-intake</b><p>Voice notes and scanned documents into structured orders, with a confidence score per field and a review queue. False auto-bookings: zero, by design.</p></a>
-      <a class="repo" href="https://github.com/akashnand1/adoption-pulse"><b>adoption-pulse</b><p>Adoption analytics that ends in a decision, not a dashboard. Classifies every feature's lifecycle and writes the Monday leadership digest itself.</p></a>
+      <a class="repo star" href="https://github.com/akashnand1/transaction-status-agent"><b>AI Transaction-Status Agent</b><span class="rname">transaction-status-agent</span><p>The transaction-management problem in miniature: driver voice notes and scanned documents become validated status updates with automatic customer notifications. Invalid updates never apply. Zero wrong states written, by construction.</p></a>
+      <a class="repo" href="https://github.com/akashnand1/invoice-to-cash-agent"><b>Invoice-to-Cash Agent</b><span class="rname">invoice-to-cash-agent</span><p>Readiness checks, a collections queue ranked by expected recovery, and reminder drafts a human approves. Fails safe, with an evaluation harness.</p></a>
+      <a class="repo" href="https://github.com/akashnand1/bid-window-optimizer"><b>Bid-Window Optimizer</b><span class="rname">bid-window-optimizer</span><p>How long should a bid window stay open? A simulator where quotes expire, and the fixed window quietly loses on every metric.</p></a>
+      <a class="repo" href="https://github.com/akashnand1/freight-doc-intake"><b>Freight Document Intake</b><span class="rname">freight-doc-intake</span><p>Voice notes and scanned documents into structured orders, with a confidence score per field and a review queue. False auto-bookings: zero, by design.</p></a>
+      <a class="repo" href="https://github.com/akashnand1/adoption-pulse"><b>Feature Adoption Analytics</b><span class="rname">adoption-pulse</span><p>Adoption analytics that ends in a decision, not a dashboard. Classifies every feature's lifecycle and writes the Monday leadership digest itself.</p></a>
     </div>
     <p class="note">Everything runs offline on sample data with no keys, and every project runs its own automated tests. None of it is company code; all of it reflects how I approach product.</p>
   </section>
